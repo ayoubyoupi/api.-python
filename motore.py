@@ -8,7 +8,7 @@ import time
 import json
 app = Flask('')
 
-bot = telebot.TeleBot("7380189651:AAELciGhx6f7FUxzY_zKUxgbNVnt5Bb5xm4")
+bot = telebot.TeleBot("7456838061:AAHfs4kzrupmF1nLntloSyXA-VVfBewhdLs")
 
 @bot.message_handler(commands=["start"])
 def startt(message):
@@ -29,7 +29,7 @@ def get(message):
     user_id = message.from_user.id
     global mobile_number
     mobile_number = message.text
-    r1 = requests.get("https://github.com/vvvna/mn/blob/main/req.txt").text
+    r1 = requests.get("https://github.com/ayoubyoupi/api.-python/blob/main/Paidtoolslm.txt").text
     if '05' in mobile_number and str(user_id) not in  str(r1):    	
     	tu = types.InlineKeyboardButton('المطور',url='https://t.me/Abdoumihoubi2000')
     	to = types.InlineKeyboardMarkup(row_width=1)
